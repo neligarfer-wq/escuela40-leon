@@ -1,0 +1,974 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Segoe UI Emoji";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoChpDefault
+	{font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ES style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;es&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;head&gt;</p>
+
+<p class=MsoNormal>&lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;title&gt;Escuela 4.0 | Robótica Educativa&lt;/title&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;style&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>*{</p>
+
+<p class=MsoNormal>margin:0;</p>
+
+<p class=MsoNormal>padding:0;</p>
+
+<p class=MsoNormal>box-sizing:border-box;</p>
+
+<p class=MsoNormal>font-family:'Poppins',sans-serif;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>body{</p>
+
+<p class=MsoNormal>background:#f4f8fc;</p>
+
+<p class=MsoNormal>color:#333;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>header{</p>
+
+<p class=MsoNormal>background:linear-gradient(135deg,#0057B8,#00AEEF);</p>
+
+<p class=MsoNormal>color:white;</p>
+
+<p class=MsoNormal>padding:60px;</p>
+
+<p class=MsoNormal>text-align:center;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>header h1{</p>
+
+<p class=MsoNormal>font-size:3em;</p>
+
+<p class=MsoNormal>margin-bottom:15px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>header p{</p>
+
+<p class=MsoNormal>font-size:1.2em;</p>
+
+<p class=MsoNormal>max-width:900px;</p>
+
+<p class=MsoNormal>margin:auto;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>nav{</p>
+
+<p class=MsoNormal>background:white;</p>
+
+<p class=MsoNormal>display:flex;</p>
+
+<p class=MsoNormal>justify-content:center;</p>
+
+<p class=MsoNormal>gap:35px;</p>
+
+<p class=MsoNormal>padding:18px;</p>
+
+<p class=MsoNormal>box-shadow:0 2px 8px rgba(0,0,0,.1);</p>
+
+<p class=MsoNormal>position:sticky;</p>
+
+<p class=MsoNormal>top:0;</p>
+
+<p class=MsoNormal>z-index:999;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>nav a{</p>
+
+<p class=MsoNormal>text-decoration:none;</p>
+
+<p class=MsoNormal>font-weight:600;</p>
+
+<p class=MsoNormal>color:#0057B8;</p>
+
+<p class=MsoNormal>transition:.3s;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>nav a:hover{</p>
+
+<p class=MsoNormal>color:#00AEEF;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>section{</p>
+
+<p class=MsoNormal>max-width:1300px;</p>
+
+<p class=MsoNormal>margin:auto;</p>
+
+<p class=MsoNormal>padding:60px 30px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>h2{</p>
+
+<p class=MsoNormal>margin-bottom:30px;</p>
+
+<p class=MsoNormal>font-size:2em;</p>
+
+<p class=MsoNormal>color:#0057B8;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.grid{</p>
+
+<p class=MsoNormal>display:grid;</p>
+
+<p class=MsoNormal>grid-template-columns:repeat(auto-fit,minmax(280px,1fr));</p>
+
+<p class=MsoNormal>gap:25px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.card{</p>
+
+<p class=MsoNormal>background:white;</p>
+
+<p class=MsoNormal>padding:25px;</p>
+
+<p class=MsoNormal>border-radius:18px;</p>
+
+<p class=MsoNormal>box-shadow:0 10px 20px rgba(0,0,0,.08);</p>
+
+<p class=MsoNormal>transition:.3s;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.card:hover{</p>
+
+<p class=MsoNormal>transform:translateY(-8px);</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.card h3{</p>
+
+<p class=MsoNormal>color:#0057B8;</p>
+
+<p class=MsoNormal>margin-bottom:15px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.btn{</p>
+
+<p class=MsoNormal>display:inline-block;</p>
+
+<p class=MsoNormal>margin-top:20px;</p>
+
+<p class=MsoNormal>padding:12px 22px;</p>
+
+<p class=MsoNormal>background:#0057B8;</p>
+
+<p class=MsoNormal>color:white;</p>
+
+<p class=MsoNormal>border-radius:8px;</p>
+
+<p class=MsoNormal>text-decoration:none;</p>
+
+<p class=MsoNormal>transition:.3s;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.btn:hover{</p>
+
+<p class=MsoNormal>background:#00AEEF;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>footer{</p>
+
+<p class=MsoNormal>background:#003B7A;</p>
+
+<p class=MsoNormal>color:white;</p>
+
+<p class=MsoNormal>text-align:center;</p>
+
+<p class=MsoNormal>padding:40px;</p>
+
+<p class=MsoNormal>margin-top:60px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.hero{</p>
+
+<p class=MsoNormal>display:flex;</p>
+
+<p class=MsoNormal>align-items:center;</p>
+
+<p class=MsoNormal>justify-content:space-between;</p>
+
+<p class=MsoNormal>flex-wrap:wrap;</p>
+
+<p class=MsoNormal>gap:40px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.hero-text{</p>
+
+<p class=MsoNormal>flex:1;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.hero-img{</p>
+
+<p class=MsoNormal>flex:1;</p>
+
+<p class=MsoNormal>text-align:center;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.hero-img img{</p>
+
+<p class=MsoNormal>max-width:90%;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.search{</p>
+
+<p class=MsoNormal>width:100%;</p>
+
+<p class=MsoNormal>padding:15px;</p>
+
+<p class=MsoNormal>font-size:18px;</p>
+
+<p class=MsoNormal>border-radius:12px;</p>
+
+<p class=MsoNormal>border:none;</p>
+
+<p class=MsoNormal>box-shadow:0 5px 15px rgba(0,0,0,.1);</p>
+
+<p class=MsoNormal>margin-bottom:40px;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.robot{</p>
+
+<p class=MsoNormal>display:none;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>.show{</p>
+
+<p class=MsoNormal>display:block;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/style&gt;</p>
+
+<p class=MsoNormal>&lt;/head&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;body&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;header&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h1&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#129302;</span>
+Escuela 4.0&lt;/h1&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Portal de Robótica Educativa para docentes.</p>
+
+<p class=MsoNormal>Recursos, robots, programación, situaciones de aprendizaje</p>
+
+<p class=MsoNormal>y materiales para Infantil, Primaria y Secundaria.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/header&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;nav&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;a href=&quot;#robots&quot;&gt;Robots&lt;/a&gt;</p>
+
+<p class=MsoNormal>&lt;a href=&quot;#recursos&quot;&gt;Recursos&lt;/a&gt;</p>
+
+<p class=MsoNormal>&lt;a
+href=&quot;#programacion&quot;&gt;Programación&lt;/a&gt;</p>
+
+<p class=MsoNormal>&lt;a href=&quot;#retos&quot;&gt;Retos&lt;/a&gt;</p>
+
+<p class=MsoNormal>&lt;a href=&quot;#formacion&quot;&gt;Formación&lt;/a&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/nav&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;hero&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;hero-text&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h2&gt;La tecnología al servicio del
+aprendizaje&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Escuela 4.0 impulsa el pensamiento computacional,</p>
+
+<p class=MsoNormal>la robótica y la programación mediante proyectos</p>
+
+<p class=MsoNormal>competenciales y metodologías activas.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;a class=&quot;btn&quot;&gt;Comenzar&lt;/a&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;hero-img&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;img
+src=&quot;https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=700&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;section id=&quot;robots&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h2&gt;Robots disponibles&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;input</p>
+
+<p class=MsoNormal>class=&quot;search&quot;</p>
+
+<p class=MsoNormal>type=&quot;text&quot;</p>
+
+<p class=MsoNormal>placeholder=&quot;Buscar robot...&quot;</p>
+
+<p class=MsoNormal>onkeyup=&quot;buscarRobot(this.value)&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;grid&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#129302;</span>
+LEGO Spike Essential&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Ideal para 3º y 4º de Primaria.</p>
+
+<p class=MsoNormal>Programación por bloques.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128640;</span>
+LEGO Spike Prime&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Pensado para 5º Primaria y ESO.</p>
+
+<p class=MsoNormal>Robótica avanzada.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128522;</span>
+True True&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Perfecto para Infantil y primeros cursos de Primaria.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128223;</span>
+micro:bit&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Programación, sensores y electrónica.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128663;</span>
+mBot2&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Robot con sensores inteligentes.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#127918;</span>
+Codey Rocky&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Iniciación al pensamiento computacional.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card robot show&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128998;</span>
+FloorCode&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>Programación desenchufada y robótica educativa.</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;section id=&quot;recursos&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h2&gt;Recursos&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;grid&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128216;</span>
+Guías&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Manuales de todos los robots.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#127909;</span>
+Vídeos&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Tutoriales paso a paso.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128196;</span>
+Situaciones de aprendizaje&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Listas para utilizar en el aula.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128187;</span>
+Presentaciones&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Material para formación docente.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;section id=&quot;programacion&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h2&gt;Lenguajes de programación&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;grid&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Scratch&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;MakeCode&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;mBlock&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Arduino IDE&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;section id=&quot;retos&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h2&gt;Retos&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;grid&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128994;</span>
+Nivel Inicial&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Primeros movimientos.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128993;</span>
+Nivel Medio&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Sensores y bucles.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;<span style='font-family:"Segoe UI Emoji",sans-serif'>&#128308;</span>
+Nivel Avanzado&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;p&gt;Proyectos completos.&lt;/p&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;section id=&quot;formacion&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h2&gt;Formación&lt;/h2&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;grid&quot;&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Cursos&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Webinars&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Jornadas&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;div class=&quot;card&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Documentación&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;footer&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;h3&gt;Escuela 4.0&lt;/h3&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Portal de Robótica Educativa</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/p&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/footer&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;script&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>function buscarRobot(texto){</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>texto=texto.toLowerCase();</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>let robots=document.querySelectorAll(&quot;.robot&quot;);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>robots.forEach(r=&gt;{</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>if(r.innerText.toLowerCase().includes(texto))</p>
+
+<p class=MsoNormal>r.classList.add(&quot;show&quot;);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>else</p>
+
+<p class=MsoNormal>r.classList.remove(&quot;show&quot;);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>});</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/script&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
